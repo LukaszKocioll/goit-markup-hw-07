@@ -1,15 +1,18 @@
 .customers {
-  justify-content: space-between;
-  display: flex;
-  padding: 94px auto;
-  .customers__title {
+  
+  &__company {
+    justify-content: space-between;
+    display: flex;
+    padding: 94px auto;
+  }
+  &__title {
     margin: 0 auto 50px auto;
     text-align: center;
     line-height: 1.16;
     color: $title-color;
     font-size: 36px;
   }
-  .customers__logo {
+  &__logo {
     cursor: pointer;
     padding: 16px 32px;
     text-align: center;
@@ -18,7 +21,7 @@
     border: $border-customers 1px solid;
     border-radius: 4px;
   }
-  .customers__logo:hover {
+  &__logo:hover {
     fill: $background-hover-color;
     cursor: pointer;
     border-radius: 4px;
@@ -26,11 +29,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .customers__icon {
+  &__icon {
     fill: $border-customers;
     cursor: pointer;
   }
-  .customers__icon:hover {
+  &__icon:hover {
     fill: $background-hover-color;
     cursor: pointer;
     transition-duration: 250ms;

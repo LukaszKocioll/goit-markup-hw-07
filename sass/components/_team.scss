@@ -1,28 +1,29 @@
 .team {
+  padding: 94px 0;
+  margin: 0 auto;
+  background-color: #f5f4fa;
+
+  &__tiles {
   margin: 0 auto;
   max-width: 1170px;
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
-  .team__background {
-    padding: 94px 0;
-    margin: 0 auto;
-    background-color: #f5f4fa;
   }
-  .team__title {
+  &__title {
     margin: auto auto 50px auto;
     text-align: center;
     line-height: 1.16;
     color: $title-color;
     font-size: 36px;
   }
-  .team__worker {
+  &__worker {
     background-color: $text-button;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .team__name {
+  &__name {
     margin: 30px auto 0 auto;
     text-align: center;
     line-height: 1.18;
@@ -30,37 +31,35 @@
     font-weight: 500;
     font-size: 16px;
   }
-  .team__position {
+  &__position {
     margin: 10px auto 16px auto;
     text-align: center;
     line-height: 1.18;
     color: $description-color;
     font-size: 16px;
   }
-  .team__socials {
+  &__socials {
     cursor: pointer;
     justify-content: space-between;
     padding: 16px 32px 18px 32px;
     display: flex;
   }
-  .team__icon {
-    cursor: pointer;
-    padding: 12px;
-    display: flex;
-    fill: $border-customers;
-    width: 44px;
-    height: 44px;
-  }
-  .team__icon:hover {
+  &__icon:hover {
     fill: $border-projects;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .team__icons:hover {
+  &__icons:hover {
     border-radius: 50%;
     fill: $border-projects;
     background-color: #2196f3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &__icon {cursor: pointer;
+    padding: 12px;
+    display: flex;
+    fill: $border-customers;
+    width: 44px;
+    height: 44px;}
 }

@@ -1,13 +1,16 @@
 .projects {
-  margin: 50px auto 0 auto;
-  .projects__buttons {
+  
+  &__buttons {
     display: flex;
     justify-content: center;
     column-gap: 8px;
     margin: 0 auto;
     padding: 0 0;
   }
-  .projects__button--shadow:hover {
+  &__cv {
+    margin: 50px auto 0 auto;
+  }
+  &__button--shadow:hover {
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -15,12 +18,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .projects__button--shadow:focus {
+  &__button--shadow:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
   }
-  .projects__button {
+  &__button {
     border-radius: 4px;
     border: none;
     padding: 6px 22px;
@@ -30,42 +33,42 @@
     font-weight: 500;
     font-size: 16px;
   }
-  .projects__tile {
+  &__tile {
     padding: 0 0;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .projects__shadow {
+  &__shadow {
     width: 370px;
   }
-  .projects__shadow:hover {
+  &__shadow:hover {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .projects__shadow:focus {
+  &__shadow:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .projects__shadow:hover .projects__text {
+  &__shadow:hover &__text {
     transform: translateY(0);
   }
-  .projects__background {
+  &__background {
     position: relative;
     overflow: hidden;
   }
-  .projects__background > img {
+  &__background > img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .projects__img {
+  &__img {
     display: block;
   }
-  .projects__text {
+  &__text {
     margin: 0;
     position: absolute;
     left: 0;
@@ -81,20 +84,20 @@
     font-weight: 400;
     font-size: 18px;
   }
-  .projects__border {
+  &__border {
     padding: 20px 24px;
     display: block;
     border-bottom: 1px solid $border-projects;
     border-left: 1px solid $border-projects;
     border-right: 1px solid $border-projects;
   }
-  .projects__name {
+  &__name {
     margin: 0 auto 4px auto;
     line-height: 2;
     font-size: 18px;
     color: $title-color;
   }
-  .projects__type {
+  &__type {
     margin: 0 auto;
     line-height: 1.9;
     font-size: 16px;

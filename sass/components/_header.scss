@@ -4,7 +4,7 @@
   margin: 0;
   max-width: 1200px;
   padding: 32px 0;
-  .header__logo {
+  &__logo {
     font-family: "Raleway";
     text-decoration: none;
     line-height: 1.2;
@@ -12,22 +12,22 @@
     font-weight: 700;
     font-size: 26px;
   }
-  .header__hlogo {
+  &__hlogo {
     line-height: 1.2;
     color: $background-hover-color;
     font-weight: 700;
     font-size: 26px;
   }
-  .header__navigations {
+  &__navigations {
     padding: 0 0;
     display: flex;
     margin: 0 345px 0 93px;
     column-gap: 46px;
   }
-  .header__underline {
+  &__underline {
     position: relative;
   }
-  .header__underline::after {
+  &__underline::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -37,7 +37,7 @@
     background-color: $background-hover-color;
     border-radius: 2px;
   }
-  .header__navigation {
+  &__navigation {
     text-decoration: none;
     cursor: pointer;
     line-height: 1.1;
@@ -45,17 +45,17 @@
     font-weight: 500;
     font-size: 14px;
   }
-  .header__navigation:hover {
+  &__navigation:hover {
     color: $background-hover-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header__navigation:focus {
+  &__navigation:focus {
     color: $background-hover-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header__email {
+  &__email {
     margin-left: 10px;
     margin-right: 30px;
     text-decoration: none;
@@ -65,15 +65,15 @@
     font-weight: 500;
     font-size: 14px;
   }
-  .header__email:hover {
+  &__email:hover {
     color: $background-hover-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header__email:focus {
+  &__email:focus {
     color: $background-hover-color;
   }
-  .header__phone {
+  &__phone {
     margin: 0 0 0 10px;
     text-decoration: none;
     cursor: pointer;
@@ -82,15 +82,15 @@
     font-weight: 500;
     font-size: 14px;
   }
-  .header__phone:hover {
+  &__phone:hover {
     color: $background-hover-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header__phone:focus {
+  &__phone:focus {
     color: $background-hover-color;
   }
-  .header__field:hover {
+  &__field:hover {
     margin: 0 0;
     cursor: pointer;
     fill: $background-hover-color;

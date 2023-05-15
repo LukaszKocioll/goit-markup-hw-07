@@ -25,11 +25,11 @@ li {
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--title-color);
+  color: var$title-color;
 }
 
 header {
-  border-bottom: 1px solid var(--border-projects);
+  border-bottom: 1px solid $border-projects;
 }
 textarea {
   resize: none;
